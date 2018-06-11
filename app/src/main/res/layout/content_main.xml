@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.calculator.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <GridLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:columnCount="5"
+        android:rowCount="8"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="146.75dp"
+            android:layout_columnSpan="5"
+            android:layout_rowSpan="2"
+            android:gravity="right|bottom"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="0" />
+
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:background="@android:color/background_light"
+            android:text="C"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+
+            android:layout_column="4"
+            android:layout_row="2"
+            android:background="@android:color/background_light"
+            android:text="X"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/sin"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:background="@color/blue1"
+            android:text="sin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:text="("
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:text=")"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/sqrt"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:text="√"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:text="/"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/cos"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:background="@color/blue1"
+            android:text="cos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:elevation="0dp"
+            android:text="*"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/tan"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:background="@color/blue1"
+            android:text="tan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/square"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:text="^"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="8"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="9"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:text="+"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/pai"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue1"
+            android:text="π"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="158dp"
+            android:layout_height="73.375dp"
+            android:layout_columnSpan="2"
+            android:background="@android:color/background_light"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/point"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@android:color/background_light"
+            android:text="."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="79dp"
+            android:layout_height="73.375dp"
+            android:background="@color/blue2"
+            android:text="="
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

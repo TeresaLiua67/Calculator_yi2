@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.calculator.UnitActivity"
+    tools:showIn="@layout/activity_unit">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="7dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="选择要转换的单位类型"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="从"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" />
+
+            <EditText
+                android:id="@+id/in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <Spinner
+                android:id="@+id/choose1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="转换为"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" />
+
+
+            <TextView
+                android:id="@+id/out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Spinner
+                android:id="@+id/choose2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:columnCount="3"
+            android:rowCount="5"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <Button
+                android:id="@+id/pointd"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:layout_column="2"
+                android:layout_row="4"
+                android:background="@android:color/white"
+                android:text="."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/cleard"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@android:color/background_light"
+                android:text="C"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            <Button
+                android:id="@+id/canceld"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@android:color/white"
+                android:text="X"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            <Button
+                android:id="@+id/oned"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:background="@android:color/background_light"
+                android:text="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/twod"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:background="@android:color/background_light"
+                android:text="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/threed"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:background="@android:color/background_light"
+                android:text="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/fourd"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:background="@android:color/background_light"
+                android:text="4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/fived"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:background="@android:color/background_light"
+                android:text="5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/sixd"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:background="@android:color/background_light"
+                android:text="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/sevend"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:background="@android:color/background_light"
+                android:text="7"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/eightd"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:background="@android:color/background_light"
+                android:text="8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/nined"
+                android:layout_width="131.7dp"
+                android:layout_height="58.1dp"
+                android:background="@android:color/background_light"
+                android:text="9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/zerod"
+                android:layout_width="263.6dp"
+                android:layout_height="58.1dp"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_row="4"
+                android:background="@android:color/background_light"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </GridLayout>
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</android.support.constraint.ConstraintLayout>
